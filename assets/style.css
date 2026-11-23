@@ -89,9 +89,13 @@ h2 { margin: 0; font-size: clamp(30px, 3.4vw, 42px); line-height: 1.1; }
 .hero-text { flex: 3 1 540px; min-width: 0; }
 .hero h1 { margin: 0; font-size: clamp(40px, 5.8vw, 72px); line-height: 1.04; letter-spacing: -0.025em; }
 .hero .lead { margin: 28px 0 36px; max-width: 600px; font-size: 19px; color: var(--muted); }
-.hero-photo { flex: 1 1 260px; max-width: 340px; margin: 0; }
-.hero-photo img, .photo-placeholder {
-  width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+.hero-photo { flex: 1 1 300px; max-width: 420px; margin: 0; }
+.hero-photo img {
+  width: 100%; height: auto;
+  border-radius: 12px; border: 1px solid var(--line);
+}
+.photo-placeholder {
+  width: 100%; aspect-ratio: 4 / 5;
   border-radius: 12px; border: 1px solid var(--line); background: var(--surface);
 }
 .photo-placeholder { display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
